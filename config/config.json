@@ -1,0 +1,12 @@
+{
+  "wymagania_obowiazkowe": [
+    "2 lata doświadczenia z Java",
+    "Praca w projekcie z spring boot",
+    "Poziom angielskiego B2+"
+  ],
+  "wymagania_dodatkowe": [
+    "Doświadczenie z C++",
+    "Znajomość Docker-a",
+    "Certyfikat AWS"
+  ]
+}
