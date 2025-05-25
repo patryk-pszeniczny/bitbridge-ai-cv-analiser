@@ -12,10 +12,13 @@ Used on [bitbridge.pl](https://bitbridge.pl) — because manual recruiting is so
 - 🔍 Checks if you match the *secret sauce* criteria from our JSON file  
 - 🤯 Sends it to OpenAI’s GPT (aka the robot with the brain of 1,000 HR people)  
 - 📊 Gives you back a brutally honest JSON report with:
-  - `overall_score`: Are you the chosen one? 🔮
-  - `matches`: Stuff you nailed 🎯
-  - `missing`: Stuff you forgot like a noob 😬
-  - `summary`: TL;DR of your job life 📝
+  - `overall_score` (0–100): Are you the chosen one? 🔮  
+  - `best_fit` (0–100): How well you fit the juiciest role 💼  
+  - `candidate`: Your name, if you remembered to put it 😅  
+  - `matches`: Stuff you nailed 🎯  
+  - `missing`: Stuff you forgot like a noob 😬  
+  - `summary`: Bullet-point roast of your job life 📝  
+  - `follow_up_questions`: 10 questions to make you sweat in the interview 🔥
 
 ---
 
@@ -32,6 +35,8 @@ cd cv-analyzer
 ```
 OPENAI_API_KEY=your-super-secret-api-key
 OPENAI_API_MODEL=gpt-4
+OPENAI_API_TEMPERATURE=0.3
+OPENAI_API_CONTENT=secret :)
 ```
 
 4. Create a `config/config.json` file with all your juicy criteria (or steal ours 🤫)  
@@ -57,9 +62,28 @@ config/       # Your sacred hiring criteria 🧙‍♂️
 
 ```json
 {
-  "must_have": ["Python", "Teamwork", "AI experience"],
-  "nice_to_have": ["Docker", "Kubernetes", "Astral projection"]
+  "mandatory_requirements": [
+    "Minimum 2 years of experience with Java (advanced level)",
+    "Experience working with Spring Boot",
+    "English proficiency at B2 level or higher",
+    "Ability to work in a Scrum team (regular Scrum)",
+    "Problem-solving skills in complex environments",
+    "Ability to communicate with both technical and non-technical stakeholders"
+  ],
+  "additional_requirements": [
+    "Familiarity with the Gosu language (Guidewire junior/regular)",
+    "Experience with microservice architecture",
+    "Knowledge of relational and non-relational databases",
+    "Familiarity with Docker",
+    "Experience with the Azure platform",
+    "Experience with Python, GenAI, or Databricks",
+    "AWS or other cloud-related certifications",
+    "Interest in modern technologies and willingness to continuously develop",
+    "Experience working with CI/CD",
+    "Ability to work in a cloud-native environment"
+  ]
 }
+
 ```
 
 ---
