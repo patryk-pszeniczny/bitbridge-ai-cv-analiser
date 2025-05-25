@@ -23,7 +23,7 @@ Used on [bitbridge.pl](https://bitbridge.pl) — because manual recruiting is so
 
 1. Clone the repo (duh)  
 ```bash
-git clone https://github.com/patryk-pszeniczny/bitbridge-ai-cv-analiser.git
+git clone https://github.com/patryk-pszeniczny/bitbridge-ai-cv-analyzer.git
 cd cv-analyzer
 ```
 
