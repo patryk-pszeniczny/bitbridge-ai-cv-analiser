@@ -1,0 +1,52 @@
+{
+  "overall_score": 71,
+  "best_fit": 84,
+  "candidate": "Patryk Pszeniczny",
+  "matches": [
+    "Minimum 2 lata doświadczenia z Java (Java advanced)",
+    "Doświadczenie w pracy z Spring Boot",
+    "Znajomość języka angielskiego na poziomie B2 lub wyższym",
+    "Zdolność rozwiązywania problemów w złożonych środowiskach",
+    "Znajomość relacyjnych i nierelacyjnych baz danych",
+    "Doświadczenie z architekturą mikroserwisów",
+    "Znajomość Dockera",
+    "Zainteresowanie nowoczesnymi technologiami i chęć ciągłego rozwoju"
+  ],
+  "missing": [
+    "Umiejętność pracy w zespole scrumowym (Scrum regular)",
+    "Umiejętność komunikacji z interesariuszami technicznymi i nietechnicznymi",
+    "Znajomość języka Gosu (Guidewire junior/regular)",
+    "Znajomość platformy Azure",
+    "Doświadczenie z Python, GenAI lub Databricks (only partial: Python/GenAI, no Databricks)",
+    "Certyfikat AWS lub inne certyfikaty chmurowe",
+    "Doświadczenie w pracy z CI/CD",
+    "Umiejętność pracy w środowisku chmurowym (cloud-native)"
+  ],
+  "summary": [
+    "Strong hands-on experience with Java, C#, and C, including backend and frontend development.",
+    "Solid exposure to Spring Boot, microservices, and both relational (MySQL, MS SQL, PostgreSQL) and non-relational (MongoDB, Redis) databases.",
+    "Demonstrated ability to design and implement complex, modular, and scalable systems, including real-time data synchronization and integration with hardware.",
+    "Experience with Docker and some exposure to Python and GenAI (OpenAI API integration).",
+    "Shows initiative and interest in modern technologies and continuous learning.",
+    "Upper-intermediate (B2) English proficiency is stated.",
+    "No explicit evidence of Scrum or agile teamwork experience; team/project context is mostly individual or unclear.",
+    "No mention of communication with technical/non-technical stakeholders.",
+    "No experience or knowledge of Guidewire/Gosu, Azure, or cloud-native environments is indicated.",
+    "No mention of CI/CD practices or cloud certifications.",
+    "Education is ongoing (BSc in progress), but practical experience is strong.",
+    "No unrealistic or misleading claims detected; technical claims are plausible and well-described.",
+    "CV structure is dense and could benefit from clearer formatting and separation of sections for easier readability."
+  ],
+  "follow_up_questions": [
+    "Can you describe your experience working in Scrum or other agile teams? What was your role and how did you contribute?",
+    "How do you communicate complex technical concepts to non-technical stakeholders? Can you provide an example?",
+    "Have you worked with any cloud platforms (e.g., Azure, AWS, GCP)? If so, please describe your experience.",
+    "What is your experience with CI/CD pipelines and related tools?",
+    "Can you elaborate on your use of Docker in your projects? What was the scope and purpose?",
+    "Have you ever integrated or worked with Guidewire or the Gosu language?",
+    "Can you describe a challenging problem you solved in a complex system and your approach to resolving it?",
+    "What is your experience with cloud-native application design and deployment?",
+    "How do you ensure code quality and maintainability in your projects?",
+    "Can you provide more details about your team collaboration experience, especially in larger or cross-functional teams?"
+  ]
+}

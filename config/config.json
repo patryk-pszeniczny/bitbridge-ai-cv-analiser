@@ -1,12 +1,22 @@
 {
   "wymagania_obowiazkowe": [
-    "2 lata doświadczenia z Java",
-    "Praca w projekcie z spring boot",
-    "Poziom angielskiego B2+"
+    "Minimum 2 lata doświadczenia z Java (Java advanced)",
+    "Doświadczenie w pracy z Spring Boot",
+    "Znajomość języka angielskiego na poziomie B2 lub wyższym",
+    "Umiejętność pracy w zespole scrumowym (Scrum regular)",
+    "Zdolność rozwiązywania problemów w złożonych środowiskach",
+    "Umiejętność komunikacji z interesariuszami technicznymi i nietechnicznymi"
   ],
   "wymagania_dodatkowe": [
-    "Doświadczenie z C++",
-    "Znajomość Docker-a",
-    "Certyfikat AWS"
+    "Znajomość języka Gosu (Guidewire junior/regular)",
+    "Doświadczenie z architekturą mikroserwisów",
+    "Znajomość relacyjnych i nierelacyjnych baz danych",
+    "Znajomość Dockera",
+    "Znajomość platformy Azure",
+    "Doświadczenie z Python, GenAI lub Databricks",
+    "Certyfikat AWS lub inne certyfikaty chmurowe",
+    "Zainteresowanie nowoczesnymi technologiami i chęć ciągłego rozwoju",
+    "Doświadczenie w pracy z CI/CD",
+    "Umiejętność pracy w środowisku chmurowym (cloud-native)"
   ]
 }

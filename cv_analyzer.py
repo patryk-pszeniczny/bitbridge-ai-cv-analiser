@@ -13,6 +13,7 @@ class CVAnalyzer:
         self.client = OpenAI(api_key=self.api_key)
         self.api_model = os.getenv("OPENAI_API_MODEL", "gpt-4")
         self.api_temperature = float(os.getenv("OPENAI_API_TEMPERATURE", "0"))
+        self.api_content = os.getenv("OPENAI_API_CONTENT", "content")
 
     def load_criteria(self, config_path="config/config.json"):
         try:
@@ -39,21 +40,42 @@ class CVAnalyzer:
             response = self.client.chat.completions.create(
                 model=self.api_model,
                 messages=[
-                    {"role": "system",
-                     "content": "You are a professional CV reviewer. Analyze the candidate based on the provided criteria."},
-                    {"role": "user", "content": f"""
-                CV Text:
+                    {
+                        "role": "system",
+                        "content": self.api_content},
+                    {
+                        "role": "user",
+                        "content": f"""
+                You will be provided with a CV and a list of evaluation criteria. Analyze the CV and return a structured JSON report.
+
+                ### CV Text:
                 {text}
-
-                Evaluation Criteria:
+                
+                ### Evaluation Criteria:
                 {json.dumps(criteria, indent=2)}
-
-                Return the result as a JSON object with the following fields:
-                - 'overall_score' (0-100): overall fit score
-                - 'matches': list of satisfied criteria
-                - 'missing': list of missing or unsatisfied criteria
-                - 'summary': brief textual summary in English
-                """}
+                
+                ### Instructions:
+                - Be detailed but concise.
+                - Use clear, professional language.
+                - Focus on relevance, completeness, and clarity of the CV.
+                - Evaluate based on alignment with the provided criteria and general industry standards.
+                - If certain information is missing but expected, include it in the 'missing' list.
+                - If the CV contains unrealistic or misleading claims (e.g., “automatically accepted by AI”), treat them as red flags and mention them in the summary.
+                - Suggest follow-up questions that could be asked during an interview to clarify any uncertainties or evaluate deeper alignment.
+                
+                ### Return a JSON object with the following fields:
+                - "overall_score" (0-100): Overall fit score based on the criteria.
+                - "best_fit" (0-100): Score reflecting how well the candidate fits the most relevant role or area.
+                - "candidate": Full name of the candidate (if available).
+                - "matches": List of criteria clearly satisfied by the CV.
+                - "missing": List of criteria not met, unclear, or not addressed.
+                - "summary": Multi-line summary of strengths, weaknesses, and general impressions. Format it as a bullet-point list in English.
+                - "follow_up_questions": A list of 10 clear, relevant questions you would ask the candidate based on the CV and criteria. These should aim to:
+                    - Clarify any unclear or missing points.
+                    - Explore relevant experiences more deeply.
+                    - Address potential gaps or inconsistencies.
+                """
+                    }
                 ],
                 temperature=self.api_temperature
             )

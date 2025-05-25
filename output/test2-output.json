@@ -1,0 +1,61 @@
+{
+  "overall_score": 82,
+  "best_fit": 88,
+  "candidate": "Jordan M",
+  "matches": [
+    "Minimum 2 lata doświadczenia z Java (Java advanced)",
+    "Doświadczenie w pracy z Spring Boot",
+    "Znajomość języka angielskiego na poziomie B2 lub wyższym",
+    "Zdolność rozwiązywania problemów w złożonych środowiskach",
+    "Znajomość relacyjnych i nierelacyjnych baz danych",
+    "Znajomość Dockera",
+    "Doświadczenie z architekturą mikroserwisów",
+    "Zainteresowanie nowoczesnymi technologiami i chęć ciągłego rozwoju",
+    "Doświadczenie w pracy z CI/CD",
+    "Umiejętność pracy w środowisku chmurowym (cloud-native)"
+  ],
+  "missing": [
+    "Umiejętność pracy w zespole scrumowym (Scrum regular)",
+    "Umiejętność komunikacji z interesariuszami technicznymi i nietechnicznymi",
+    "Znajomość języka Gosu (Guidewire junior/regular)",
+    "Znajomość platformy Azure",
+    "Doświadczenie z Python, GenAI lub Databricks (Python mentioned, but unclear if commercial/professional)",
+    "Certyfikat AWS lub inne certyfikaty chmurowe"
+  ],
+  "summary": [
+    "Strengths:",
+    "- Solid experience (2+ years) as a Java Developer, with advanced Java and Spring Boot skills.",
+    "- Demonstrated hands-on experience with microservices, Docker, CI/CD, and cloud deployment (AWS).",
+    "- Exposure to both relational (MySQL, PostgreSQL, Oracle) and non-relational (Redis, MongoDB) databases.",
+    "- Active involvement in open-source and personal projects, showing initiative and continuous learning.",
+    "- Experience working with international teams and clients, indicating adaptability.",
+    "- Strong interest in technology and ongoing education (current Computer Science studies, plans for MSc/PhD).",
+    "",
+    "Weaknesses:",
+    "- No explicit mention of Scrum or agile team experience, which is a key requirement.",
+    "- Communication skills with technical and non-technical stakeholders are not directly addressed.",
+    "- No mention of Guidewire/Gosu or Azure experience.",
+    "- Python is listed, but depth of experience is unclear (only 'learned basics' mentioned).",
+    "- No cloud certifications (AWS or otherwise) are listed.",
+    "- Some sections are cluttered and lack clear separation (e.g., skills, activities, and languages are merged).",
+    "- Minor language/grammar errors and informal tone in some places (e.g., 'I am confident that at here I will get this :)').",
+    "",
+    "General Impressions:",
+    "- The candidate is technically strong for a Java backend/microservices role and demonstrates a growth mindset.",
+    "- CV structure could be improved for clarity and professionalism.",
+    "- No unrealistic or misleading claims detected.",
+    "- Would benefit from clearer descriptions of teamwork, communication, and agile methodologies."
+  ],
+  "follow_up_questions": [
+    "Can you describe your experience working in Scrum or other agile teams? What roles did you play?",
+    "How do you communicate complex technical issues to non-technical stakeholders?",
+    "Have you worked with Guidewire or the Gosu language? If not, are you open to learning?",
+    "What is your experience with Microsoft Azure or other cloud platforms besides AWS?",
+    "Can you elaborate on your experience with Python? Was it used in production or mainly for learning?",
+    "Do you hold any AWS or other cloud certifications, or do you plan to obtain any?",
+    "Can you provide examples of challenging problems you solved in complex environments?",
+    "How do you ensure code quality and maintainability in your projects?",
+    "What was your role and contribution in the JetBrains Java Academy Moderator position?",
+    "How do you handle feedback and collaboration in distributed or international teams?"
+  ]
+}
